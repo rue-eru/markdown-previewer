@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Markdown Previewer
 **Live Demo:** [https://rue-eru.github.io/markdown-previewer](https://rue-eru.github.io/markdown-previewer)
 
@@ -10,3 +11,7 @@ All objectives and instructions for the project can be found here:
 - **Frontend:** React, Vite, CSS
 - **Build Tool:** Vite
 - **Deployment:** GitHub Pages
+=======
+# markdown-previewer
+FCC Markdown Previewer
+>>>>>>> e868c88f3bd56bd863f2837dca04439ca580240f
