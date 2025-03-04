@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Doto:wght@100..900&family=Gaegu&family=Honk&family=Londrina+Sketch&family=Markazi+Text:wght@400..700&family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+
+:root {
+  /*fonts*/
+  --header-font: Gaegu;
+  --main-font: Georgia, 'Times New Roman', Times, serif;
+  /*colors*/
+  --main-color: #d8e2dc;
+  --contast-color: #ffcad4;
+  --header-color: #f4acb7;
+  /*others*/
+  --text-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  font-family: var(--main-font);
+}
+
+#container {
+  display: inline-flex;
+  gap: 15px;
+  width: 100%;
+}
+
+#first-window,
+#second-window {
+  width: 50%;
+  border: 1px solid var(--contast-color);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 2px var(--contast-color);
+  text-align: justify;
+  cursor: text;
+  overflow: auto; /* Ensure content doesn't overflow */
+}
+
+#editor,
+#preview {
+  width: 94%;
+  height: 100vh;
+  border: none;
+  background-color: var(--main-color);
+  margin: 0 auto;
+  white-space: pre-wrap; /* This ensures text wraps */
+  overflow-wrap: break-word; /* This ensures long words break and wrap */
+  height: auto; /* Adjust height to fit content */
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+}
+
+#editor {
+  margin-left: 20px;
+}
+
+.header {
+  font-family: var(--header-font);
+  color: var(--contast-color);
+  border-bottom: var(--contast-color) solid 1px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+img {
+  width: 50px;
+}
+
+#main-header,
+#sub-header {
+  color: var(--header-color);
+}
+
+#sub-header {
+  margin-bottom: 50px;
+}
+
+a {
+  color: var(--header-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(35, 154, 154);
+}
